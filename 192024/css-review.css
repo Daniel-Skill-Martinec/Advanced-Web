@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+h2 {
+    color: orange;
+    display: inline-block;
+    /*take only as much space as is needed*/
+}
+
+p {
+    color: green;
+    display: inline-block;
+}
+
+img {
+    width: 100px;
+    display: block;
+    float: right;
+}
+
+div {
+    border: 5px solid maroon;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#div1 {
+    border: 2px dotted green;
+}
+
+a:link {
+    color: teal;
+}
+
+a:visited {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: magenta;
+    background-color: black;
+}
+
+.General_Button {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 12.5px;
+}
+
+.Add_to_Cart {
+    background-color: #FFD814;
+}
+
+.Buy_Now {
+    background-color: #FFA41C;
+}
