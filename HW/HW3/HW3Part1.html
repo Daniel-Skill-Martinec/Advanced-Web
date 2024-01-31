@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Counter</title>
+  <!-- Remove this for HTML Display Functionality and Keep for Console Display Functionality-->
+  <script src="../HW3/HW3Part1.js"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #counter {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    #buttonContainer {
+      display: flex;
+    }
+
+    #incrementButton {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    #decrementButton {
+      background-color: red;
+      color: white;
+      border: none;
+    }
+
+    #clearButton {
+      background-color: blue;
+      color: white;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h1>Counter</h1>
+  <p id="counter">0</p>
+  <div id="buttonContainer">
+    <button id="incrementButton" onclick="increment()">Increment</button>
+    <button id="clearButton" onclick="clearCounter()">Clear</button>
+    <button id="decrementButton" onclick="decrement()">Decrement</button>
+  </div>
+
+  <script>
+    let counterValue = 0;
+
+    function updateCounter() {
+      document.getElementById('counter').innerText = counterValue; 
+    }
+
+    function increment() {
+      counterValue++;
+      updateCounter();
+    }
+
+    function decrement() {
+      counterValue--;
+      updateCounter();
+    }
+
+    function clearCounter() {
+      counterValue = 0;
+      updateCounter();
+    }
+
+    updateCounter();
+  </script>
+
 </body>
 </html>

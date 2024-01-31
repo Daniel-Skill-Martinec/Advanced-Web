@@ -1,0 +1,92 @@
+.Left {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-color: blue;
+    border-style: dotted;
+    color: white;
+}
+
+#One {
+    border-color: gray;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+#Two {
+    border-color: gray;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+#Three {
+    border-color: gray;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+
+.Right {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-color: red;
+    border-style: dotted;
+    color: white;
+}
+
+#Four {
+    border-color: pink;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+#Five {
+    border-color: pink;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+#Six {
+    border-color: pink;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+#Seven {
+    border-color: pink;
+    border-style: solid;
+    margin: 2px;
+    border-width: 3px;
+}
+
+header {
+    height: 100px;
+    width: 800px;
+    border-color: green;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: bold;
+    margin: 2px;
+    border-width: 3px;
+}
+
+.div {
+    display: flex;
+    border-color: orange;
+    border-style: solid;
+    height: 400px;
+    width: 800px;
+    margin: 2px;
+    border-width: 3px;
+}
+
+footer {
+    height: 100px;
+    width: 800px;
+    border-color: purple;
+    border-style: solid;
+    font-weight: bold;
+    margin: 2px;
+    border-width: 3px;
+}
