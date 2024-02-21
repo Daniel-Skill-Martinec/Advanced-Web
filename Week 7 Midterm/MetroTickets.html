@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Tickets</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const age = Number.parseInt(prompt('Enter Your Age:'));
+    const gender = (prompt('Enter Your Gender (Male/Female):'));
+
+    if(age < 5){
+        alert('You Have a Discount of Free!');
+    } else if(age > 5 && age <= 8) {
+        alert('You Have a Discount of 50%!');
+    } else if(age > 65 && gender === 'Male') {
+        alert('You Only Pay 30%!');
+    } else if(age > 8 && gender === 'Female') {
+        alert('You Have a Discount of 50%!');
+    } else {
+        alert('No Discount');
+    }
+</script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>C -> F</title>
+    </head>
+    <body>
+        <button onclick="convertToF()">Start Conversion</button>
+    </body>
+    <script>
+        function convertToF() {
+            const temp = Number.parseInt(prompt('Enter Your Temperature:'));
+
+            Fahren = (9/5) * temp + 32;
+            alert(`Your Temperature in Fahrenheit is: ${Fahren}`);
+        }
+    </script>
+</html>

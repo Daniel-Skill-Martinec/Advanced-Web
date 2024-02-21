@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2 and 3</title>
+    </head>
+    <body>
+        <button onclick="divisble()">Start</button>
+    </body>
+    <script>
+
+        function divisble() {
+            const number = Number.parseInt(prompt('What Number?').value);
+            calcNumber2 = number / 2;
+
+            if(calcNumber2 != Number) {
+                alert('This is Not Divisible by 2');
+            } else if(calcNumber2 === Number) {
+                alert('This Number is Divisible by 2');
+            }
+
+            calcNumber3 = number / 3;
+
+            if(calcNumber3 != Number) {
+                alert('This is Not Divisible by 3');
+            } else if(calcNumber3 === Number) {
+                alert('This Number is Divisible by 3');
+            }
+        }
+
+    </script>
+</html>

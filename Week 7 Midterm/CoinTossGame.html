@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss</title>
+    <style>
+        .move-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .move-icon {
+            height: 250px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="title">Flip a Coin!</p>
+        <button onclick="
+        playGame('Heads');
+        " class="move-button"><img src="Images/heads.png" class="move-icon"></button>
+
+        <button onclick="
+        playGame('Tails');
+        " class="move-button"><img src="Images/tails.png" class="move-icon"></button>
+    </div>
+    <script>
+        function playGame(playerMove) {
+            const compMove = pickCompMove();
+            let result = '';
+
+            if(playerMove === 'Heads') {
+                if (compMove === 'Tails') {
+                    alert(`You Win! Computer Picked Tails!`);
+                } else if (compMove === 'Heads') {
+                    alert(`Rats! You Tied! Computer Picked Heads!`);
+                }
+            }
+
+            if(playerMove === 'Tails') {
+                if (compMove === 'Heads') {
+                    alert(`You Lose.... Computer Picked ${compMove}.`);
+                } else if (compMove === 'Tails') {
+                    alert(`Rats! You Tied! Computer Picked ${compMove}.`);
+                }
+            }
+        }
+
+        function pickCompMove() {
+            const randNum = Math.random();
+
+            if (randNum >= 0 && randNum < 0.5) {
+                compMove = 'Heads';
+            } else if (randNum >= 0.5 && randNum < 1) {
+                compMove = 'Tails';
+            }
+            return compMove;
+        }
+    </script>
+</body>
+</html>
