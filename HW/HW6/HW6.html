@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6</title>
+    <style>
+        .container {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Traversing the DOM</h1>
+        <div class="parent">
+            <div class="child1">Child 1</div>
+            <div class="child2">Child 2
+                <ul>
+                    <li class="apple">Apple</li>
+                    <li class="banana">Banana</li>
+                    <li class="orange">Orange</li>
+                    <li class="grapes">Grapes</li>
+                    <li class="kiwi">Kiwi</li>
+                </ul>
+            </div>
+            <div class="child3">Child 3</div>
+        </div>
+    </div>
+
+    <script>
+        // a.
+        document.querySelector('.child1').textContent = 'First Child';
+
+        // b.
+        var appleSibling = document.querySelector('.apple').nextElementSibling;
+        console.log(appleSibling.textContent);
+
+        // c.
+        var parentFirstChild = document.querySelector('.parent').firstElementChild;
+        console.log(parentFirstChild.textContent);
+
+        // d.
+        var orangePrevSibling = document.querySelector('.orange').previousElementSibling;
+        orangePrevSibling.style.color = 'green';
+
+        // e.
+        var ulParent = document.querySelector('ul').parentNode;
+        console.log(ulParent.className);
+
+        // f.
+        var ulChildNodes = document.querySelector('ul').childNodes;
+        console.log(ulChildNodes);
+
+        // g.
+        var ulSecondChild = document.querySelector('ul').children[1];
+        ulSecondChild.style.padding = '10px';
+
+        // h.
+        var child1Siblings = document.querySelector('.child1').parentElement.children;
+        console.log(child1Siblings);
+
+        // i.
+        var child3Parent = document.querySelector('.child3').parentElement;
+        child3Parent.style.border = '2px solid maroon';
+    </script>
+</body>
+</html>
