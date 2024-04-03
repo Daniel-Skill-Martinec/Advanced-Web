@@ -1,0 +1,14 @@
+{
+  "name": "422024_node_playground",
+  "version": "1.0.0",
+  "description": "Sample Node App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Daniel Martinec",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
